@@ -2,22 +2,52 @@
 <html>
     <head>
         <meta charset="UTF-8" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!-- The core React library -->
+        <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
         <script src="https://unpkg.com/react@15.3.2/dist/react.js"></script>
         <!-- The ReactDOM Library -->
         <script src="https://unpkg.com/react-dom@15.3.2/dist/react-dom.js"></script>
         <script src="https://unpkg.com/babel-core@5.8.38/browser.min.js"></script>
+        <title>React examples</title>
     </head>
     <body>
-        <!-- Example 1 -->
-        <div id="header"></div>
-        <!-- Example 2 -->
-        <div id="content"></div>
-        <!-- Example 3 -->
-        <div id="form"></div>
+        <div class="container">
+            <div class="page-header">
+                <h1>React <small>examples</small></h1>
+            </div>
 
-        <script type="text/babel" src="js/some-script.js"></script>
-        <script type="text/babel" src="js/Content.js"></script>
-        <script type="text/babel" src="js/Form.js"></script>
+            <div class="panel panel-primary">
+                <div class="panel-heading">#1 Simple rendering</div>
+                <div class="panel-body">
+                    <div id="header"></div>
+                    <script type="text/babel" src="js/some-script.js"></script>
+                </div>
+            </div>
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">#2 Render random number</div>
+                <div class="panel-body">
+                    <div id="content"></div>
+                    <script type="text/babel" src="js/Content.js"></script>
+                </div>
+            </div>
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">#3 Manipulating with form</div>
+                <div class="panel-body">
+                    <div id="form"></div>
+                    <script type="text/babel" src="js/Form.js"></script>
+                </div>
+            </div>
+
+            <div class="panel panel-primary">
+                <div class="panel-heading">#4 Form with ajax request</div>
+                <div class="panel-body">
+                    <div id="ajax"></div>
+                    <script type="text/babel" src="js/Ajax.js"></script>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

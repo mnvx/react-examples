@@ -12,7 +12,6 @@ class Form extends React.Component {
     render() {
         return (
             <div>
-                <h3>Form</h3>
                 <div>Value: {this.state.text}</div>
                 <form onSubmit={this.handleSubmit}>
                     <input onChange={this.handleChange} value={this.state.current} />
